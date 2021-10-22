@@ -1,0 +1,218 @@
+.header {
+	display: flex;
+	background-color: white;
+	align-items: baseline;
+}
+
+#header_logo {
+	max-height: 100px;
+	margin-left: 75px;
+}
+
+#header_contact {
+	float: right;
+	border-radius: 100% 100% 100% 100%;
+	padding: 0.7%;
+	background-color: #D2A864;
+	max-width: 1.2%;
+}
+
+#header_contact:hover {
+	background-color: #2C2A25;
+}
+
+#header_nav {
+	font-family: "Gotham", sans-serif;
+	font-size: 40%;
+	text-transform: uppercase;
+	margin-right: 7%;
+	margin-left: 7%;
+	margin-bottom: 2%;
+}
+
+#header_nav_links {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li.header_nav_link {
+	float: left;
+}
+
+li.header_nav_link a {
+	display: block;
+	letter-spacing: 5px;
+	padding-right: 60px;
+	padding-left: 60px;
+	border-right: 2px solid rgba(44, 42, 37, 0.5);
+	color: #2C2A25;
+	text-align: center;
+	text-decoration: none;
+}
+
+li.header_nav_link a:hover {
+	color: rgb(80, 80, 80);
+}
+
+li.header_nav_link a.active {
+	color: #D2A864;
+}
+
+#active {
+	color: #D2A864;
+}
+
+#body_video_presentation {
+	display: flex;
+	background-image: url(accueil/background.png);
+	background-size: cover;
+	background-position: center;
+	padding: 100px;
+}
+
+#texte_video_presentation {
+	display: flex;
+	flex-direction: column;
+}
+
+#title_video_presentation {
+	color: white;
+	font-family: Palatino, "Palatino Linotype", serif;
+	font-size: 160%;
+	margin-top: -34.860px;
+	margin-bottom: -34.860px;
+	text-transform: capitalize;
+}
+
+#divider_video_presentation {
+	border-top: 1px solid white;
+	max-width: 15%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#subtitle_video_presentation {
+	margin-top: -15px;
+}
+
+#subtitle_video_presentation h4 {
+	color: white;
+	font-family: "Gotham", sans-serif;
+	font-size: 100%;
+	font-style: italic;
+	font-weight: 100;
+}
+
+#content_video_presentation {
+	color: white;
+	font-family: "Gotham", sans-serif;
+	font-size: 125%;
+	max-width: 85%;
+}
+
+#watch_youtube_button {
+	border: 3px solid #2C2A25;
+	border-radius: 10px 10px 10px 10px;
+	max-width: fit-content;
+	margin-top: 10%;
+	padding: 2% 18%;
+	text-align: center;
+	color: #2C2A25;
+}
+
+#texte_video_presentation a {
+	text-decoration: none;
+}
+
+#watch_youtube_button:hover {
+	background-color: #2C2A25;
+	color: #D2A864;
+}
+
+#watch_youtube_button h3 {
+	font-family: "Gotham", sans-serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: lighter;
+}
+
+#video_presentation {
+	float: right;
+	max-height: 500px;
+	width: auto;
+}
+
+#body_carte_greece {
+	display: flex;
+	flex-direction: row;
+	background-color: #2C2A25;
+	padding: 100px;
+}
+
+#texte_carte_greece {
+	display: flex;
+	flex-direction: column;
+	margin: 0% 5%;
+}
+
+#title_carte_greece {
+	color:#D2A864;
+	font-family: Palatino, "Palatino Linotype", serif;
+	font-size: 160%;
+	text-transform: capitalize;
+}
+
+#subtitle_carte_greece h4 {
+	color: #D2A864;
+	font-family: "Gotham", sans-serif;
+	font-size: 100%;
+	margin-top: -25px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+#divider_carte_greece {
+	border-top: 1px solid #D2A864;
+	max-width: 15%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+#content_carte_greece {
+	color: #D2A864;
+	font-family: "Gotham", sans-serif;
+	font-size: 125%;
+	max-width: 85%;
+}
+
+#carte_greece_button {
+	border: 3px solid white;
+	border-radius: 10px 10px 10px 10px;
+	max-width: fit-content;
+	margin-top: 3%;
+	padding: 2% 18%;
+	text-align: center;
+	color: white;
+}
+
+#carte_greece_button:hover {
+	background-color: white;
+	color: #2C2A25;
+}
+
+#carte_greece {
+	max-height: 500px;
+}
+
+#texte_carte_greece a {
+	text-decoration: none;
+}
+
+#carte_greece_button h3 {
+	font-family: "Gotham", sans-serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: lighter;
+}
