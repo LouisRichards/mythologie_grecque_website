@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="../style.css">
+
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
+      <title>La Mythologie Grecque</title>
+   </head>
+   <header>
+      <div class="header">
+         <div style="flex-grow: 3">
+            <a href="../index.html"><img id="header_logo" src="../logo.png" alt="Logo"></a>
+         </div>
+         <div id="header_nav">
+            <ul id="header_nav_links">
+               <li class="header_nav_link">
+                  <a href="../dieux/dieux.html">
+                     <h1>dieux</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../titans/titans.html">
+                     <h1>titans</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../heros/heros.html" class="active">
+                     <h1>héros</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../creatures/creatures.html">
+                     <h1>créatures</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../monuments/monuments.html">
+                     <h1>monuments</h1>
+                  </a>
+               </li>
+               <a href="../contact/contact.html"><img id="header_contact" src="../phone.png" alt="Phone contact"></a>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <body style="margin: 0;">
+      <!-- Swiper -->
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+           <div class="cartes">
+              <div class="carte_inner_crea">
+                 <div class="carte_avant_crea">
+                    <img id="img_carte_achille" src="icon_achille.png" alt="carte achille">
+                 </div>
+                 <div class="carte_arriere_crea">
+                    <h1>achille</h1>
+                    <p>Achille est le héros légendaire de la guerre de Troie, 
+                       fils du roi Pélée de Phthie en Thessalie et fils de Thétis, 
+                       il avait la particularité d'être immortels, son seul point fabile était son talon.
+                  </p>
+                 </div>
+              </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="cartes">
+              <div class="carte_inner_crea">
+                 <div class="carte_avant_crea">
+                    <img id="img_carte_hercule" src="icon_hercule.png" alt="carte hercule">
+                 </div>
+                 <div class="carte_arriere_crea">
+                    <h1>hercule</h1>
+                    <p>Héraclès, fils de Zeus et d'Alcmène, 
+                       il est le héros a avoir fait les douze travaux sous l'ordre de Eurysthée, 
+                       le roi de l'Argolide, d'où le nom les douze travaux d'héraclés.</p>
+                 </div>
+              </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="cartes">
+              <div class="carte_inner_crea">
+                 <div class="carte_avant_crea">
+                    <img id="img_carte_persee" src="icon_persee.png" alt="carte persée">
+                 </div>
+                 <div class="carte_arriere_crea">
+                    <h1>persée</h1>
+                    <p>Persée, fils de Zeus, roi des dieux, et de Danaé, princesse d'Argos, il est connu pour être le prince du  Péloponnèse, 
+                       d'avoir tuer Méduse et d'avoir sauver Andromède.</p>
+                 </div>
+              </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="cartes">
+              <div class="carte_inner_crea">
+                 <div class="carte_avant_crea">
+                    <img id="img_carte_ulysse" src="icon_ulysse.png" alt="carte ulysse">
+                 </div>
+                 <div class="carte_arriere_crea">
+                    <h1>ulysse</h1>
+                    <p>Ulysse, le héros le plus célébre de la grèce antique, 
+                       fils de Larëte et d'anticlée, connu pour être un des héros principal du livre l’odyssée et être le roi d'Ithaque.</p>
+                 </div>
+              </div>
+           </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="cartes">
+              <div class="carte_inner_crea">
+                 <div class="carte_avant_crea">
+                    <img id="img_carte_thesee" src="icon_thesee.png" alt="carte thésée">
+                 </div>
+                 <div class="carte_arriere_crea">
+                    <h1>thésée</h1>
+                    <p>Thésée, fils d’Égée et d'Éthra, il est le héros le plus célèbre d'attique (région d’Athènes), 
+                       connu pour avoir sauver les Athéniens de leurs tribut de guerre et d'avoir  tuer le minotaure.</p>
+                 </div>
+              </div>
+           </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 0,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+      <div id="explications_crea">
+
+
+         <div class ="explications_crea_inner">
+            <div id="titre_achille" class="titre">
+               achille
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Achille est le héros légendaire de la guerre de Troie, fils du roi Pélée de Phthie en Thessalie et fils de Thétis, une Néréide (nymphe marine). Sa mère l'a plongé dans le Styx, l'une des rivières de l'enfer, pour que son corps devienne invincible. Thétis s'accrocha fermement à son talon, n'étant pas submergé, mais ce dernier resta mortel, ce qui le ferait tomber plus tard. Il a été éduqué par Chiron, le centaure le plus sage, qui lui a appris l'art de la guerre, la musique et la médecine. Adolescent, il a choisi une vie courte et glorieuse au lieu d'une vie longue et ennuyeuse. En effet, sa mère a consulté un oracle à la naissance d'Achille, et elle savait que s'il participait à la guerre de Troie, il mourrait.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_achille" src="rpz_achille.png" alt="représentation de Achille">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     De nos jours, le héros Achille est utilisé dans la littérature, le théâtre, et le cinéma. Outre ces apparitions, il a également hérité d’une expression très utilisée, même aujourd’hui : “le talon d’Achille”, qui comme elle le suggère, signifie : “avoir une faiblesse”. Cette façon de parler diverge légèrement du mythe originel, car si le talon d’Achille représentait effectivement une faiblesse, il n’en est pas moins vrai qu’il représentait son seul et unique défaut.
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_achille" src="ev_achille.png" alt="combat entre achille et hector">
+                  <br> <p class="desc">combat entre achille et hector</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_crea_inner">
+            <div id="titre_hercule" class="titre">
+               hercule
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Héraclès (renommé Hercule par les Romains), à l'origine nommé Alcide, était le fils de Zeus et d'Alcmène, et l'un des héros les plus respectés de la Grèce antique. La mythologie grecque l'a conduit à de nombreuses aventures, qui lui ont permis de voyager à travers le monde connu à l'époque, puis à travers la Méditerranée, de l'expansion de la Grande-Grèce aux Enfers. Son exploit le plus célèbre est d’avoir accompli les douze travaux. Les plus célèbres de ses exploits sont les douze travaux. Son nom a pour signification : Gloire à Héra (pourtant n’étant pas sa mère), car étant le fruit l’union de Zeus avec une mortelle. En effet, le Dieu suprême qui avait séduit Alcmène essaya de se racheter auprès de sa femme en glorifiant son nom par celui de son fils, sans succès.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_hercule" src="rpz_hercule.png" alt="">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Tout d’abord, dans la culture actuelle, Héraclès est surtout connu pour les fameux douze travaux qui lui avaient été imposés (qui n’étaient d’abord qu’au nombre de 10) qui ont été repris dans beaucoup de domaines. Héraclès est le plus représenté des héros de la mythologie grecque. Il a reçu beaucoup d’adaptations dans le domaine du jeu vidéo, de la littérature, et du cinéma, au point qu’il a même été adapté au cinéma d’animation par les studios Walt Disney Pictures en 1997.
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_hercule" src="ev_hercule.png" alt="représentation d'heracles dans le film de Walt Disney">
+                  <br> <p class="desc">représentation d'Heracles dans le film de Walt Disney</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_crea_inner">
+            <div id="titre_persee" class="titre">
+               persée
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Persée, prince péloponnésien, est un des plus grands héros grec. Il est le fils de Zeus et de Danaé (la fille du roi d'Argos Acrisios). Fou de rage, Acrisios fit jeter sa femme à la mer dans un coffre, avec son fils. Il est élevé par des pêcheurs sur l’île de Sériphos. Lorsque Persée était jeune homme, Polydectès, le roi de l'île lui confia la mission de tuer la Gorgone Méduse, dont la chevelure était faite de serpents, et dont le regard pétrifiait ceux qui ont le malheur de le croiser. De nombreux dieux lui vinrent en aide, tels qu’Athéna qui lui confia un bouclier poli comme un miroir pour apercevoir le reflet de la méduse sans craindre la mort; ou encore Hermès qui lui offrit une épée qui ne se tord, ni ne se casse. Persée, coiffé du casque d'Hadès le rendant invisible, s'approcha des Gorgones endormies, trancha la tête de Méduse, qu'il mit dans le sac magique (la kibisis) et s'enfuit, talonné par les Gorgones réveillées, qui suivirent son odeur.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_persee" src="rpz_persee.png" alt="représentation de Persée">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     De nos jours, l’histoire mythique de Persée a connu bien des adaptations. Sa légende a été de nombreuses fois reprises, surtout dans le domaine de la cinématographie. En revanche, la plupart du temps, Persée est remplacé par le héros de son histoire et seule la mort de la Gorgone Méduse fait partie de l’histoire (souvent également le fait qu’il emporte la tête de la créature décapitée). Le mythe originel nous décrit également la mort de la créature de la manière qui vous a été décrite précédemment, or elle n’est jamais la même dans les diverses adaptations du personnage (bien qu’elles présentent toutes certaines similitudes). Par exemple, son adaptation dans le film “Le choc des titans” est différente de celle du film “Percy Jackson : Le voleur de foudre” (qui sont deux adaptations parmi d’autres).
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_persee" src="ev_persee.png" alt="image du film le choc des titans">
+                  <br> <p class="desc">image du film le choc des titans où Persée tient la tête de méduse</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_crea_inner">
+            <div id="titre_ulysee" class="titre">
+               ulysse
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Ulysse (ou Odysseus) est l'un des héros les plus célèbres de la mythologie grecque. Fils de Laërte et d’Anticlée, il est devenu roi d’Ithaque. Il s’est marié à Pénélope et il a un fils, Télémaque. Il est connu pour son esprit, qui a rendu ses conseils très appréciés lors de la guerre de Troie à laquelle il a participé. C'est ce dernier qui lui a fait vivre un long voyage dans le retour de Troie, qu'Homère a chanté dans l'Odyssée.
+D’après pseudo-Apollodore, la mort d'Ulysse a été annoncée par la prophétie, marquant la fin de l'âge héroïque et donc la fin de la mythologie classique. Ulysse est la figure centrale de la poésie de l’Odyssée, auquel elle doit son nom.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_ulysse" src="rpz_ulysse.png" alt="représentation d'Ulysse">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Ulysse a beaucoup évolué depuis la mythologie grecque. Il est très connu pour son intelligence et pour son incroyable histoire qui a su en inspirer d’autres dans la littérature moderne, le théâtre, et le cinéma. En outre, au fil du temps, Ulysse est devenu un symbole très puissant d’intelligence, et une de ses péripéties aura même inspiré une expression : “Tomber de Charybde en Scylla”, qui signifie : n’échapper à un danger que pour se frotter à un autre encore plus grave.
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_ulysse" src="ev_ulysse.png" alt="representation de l odysée au theatre">
+                  <br> <p class="desc">représentation de l'Odysée au théatre</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_crea_inner">
+            <div id="titre_thesee" class="titre">
+               thésée
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div id="texte">
+                     Thésée est un héros de l'Attique. Fils d'Égée (à sa naissance, décrit par son grand-père comme le fils de Poséidon) et d'Éthra. Son nom aurait la même racine grecque que le mot “intuition”.
+Comme les héros fondateurs Persée ou Héraclès, Thésée était vénéré par les Ioniens, et les Athéniens le considéraient comme un grand réformateur : le roi mythique d'Athènes. Son règne a également marqué une période de paix avec les Thessaliens et les Béotiens. Le géographe Pausanias a rapporté qu'après l'opération conjointe, Thésée a établi le culte d'Aphrodite Pandemos («tout le peuple») et Peitho sur le versant sud de l'Acropole. Dans "Les grenouilles", Aristophane attribue plusieurs de ses traditions athéniennes à ses inventions, y compris le dévouement des cheveux de son neveu. Son exploit le plus célèbre et ses figures légendaires ont suscité de nombreuses interprétations. Certains historiens religieux ont souligné l'importance de la mythologie lunaire dans la légende de Thésée.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_thesee" src="rpz_thesee.png" alt="représentation de thésée">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Aujourd’hui encore, Thésée est utilisée dans le théâtre, le cinéma, et la littérature. Il a également, de par un de ses biens, créé un paradoxe. En effet, son bateau (élément très souvent rapporté au personnage car ayant causé indirectement la mort du père de Thésée), a été réparé de nombreuses fois, si bien qu’au bout d’un certain temps, il n’en resta plus aucune pièce d’origine. L’on en est venu à créer ce paradoxe : si l’on reconstitue le bateau avec toutes les pièces d’origine, lequel des deux bateaux sera alors le bateau de Thésée ? L’un des deux le sera-t-il ? Ou aucun des deux ?
+
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_thesee" src="ev_thesee.png" alt="image du film les immortels">
+                  <br> <p class="desc">image du film les immortels où Thésée est représenté sur le premier plan de l'illustration</p>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+    </body>
+
+    <footer>
+      <div id="contenu_footer">
+         <img id="logo_footer" src="../logo.png" alt="logo">
+         <a href="../contact/contact.html#sources">sources</a>
+         <img id="logo_iut" src="../logo_iut.png" alt="logo iut">
+         <img id="logo_univ" src="../logo_univ.png" alt="logo université">
+      </div>
+   </footer>
+
+  </html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="../style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="monuments.js"></script>
+
+      <title>La Mythologie Grecque</title>
+   </head>
+   <header>
+      <div class="header">
+         <div style="flex-grow: 3">
+            <a href="../index.html"><img id="header_logo" src="../logo.png" alt="Logo"></a>
+         </div>
+         <div id="header_nav">
+            <ul id="header_nav_links">
+               <li class="header_nav_link">
+                  <a href="../dieux/dieux.html">
+                     <h1>dieux</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../titans/titans.html">
+                     <h1>titans</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../heros/heros.html">
+                     <h1>héros</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../creatures/creatures.html">
+                     <h1>créatures</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../monuments/monuments.html"class="active">
+                     <h1>monuments</h1>
+                  </a>
+               </li>
+               <a href="../contact/contact.html"><img id="header_contact" src="../phone.png" alt="Phone contact"></a>
+            </ul>
+         </div>
+      </div>
+   </header>
+
+   <body style="margin: 0;">
+      <div id="body_carte_greece">
+         <div id="image_carte_greece">
+            <div class="ct-map">
+               <img id="carte_greece" src="carte_greece2.png" alt="Carte de la Greece">
+               <div class="ct-city athens" >
+                  <button class="ct-city__button" type="button" tabindex="0" >
+                     <img alt="Icon Ouvrir Carte" class="ct-plus" src="icon_monument.png"  data-pin-nopin="true">
+                     <img alt="Icon Fermer Carte" class="ct-close" src="icon_fermer.png" data-pin-nopin="true" >
+                     <span class="ct-city__name" >athènes</span>
+                  </button>
+                  <div class="ct-popup" >
+                     <div class="inner" >
+                     <span class="ct-popup__name" >athènes</span>
+                     <p class="ct-popup__content" >
+                        Le Parthénon (littéralement « la « salle » ou la « demeure » des vierges ») est un temple grec, situé sur l'Acropole d'Athènes, 
+                        dédié à la déesse Athéna, que les Athéniens considéraient comme la patronne, et la gardienne de leur cité.<br />etc...
+                     </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="ct-city epidaure" >
+                  <button class="ct-city__button" type="button" tabindex="0" >
+                     <img alt="Icon Ouvrir Carte" class="ct-plus" src="icon_monument.png"  data-pin-nopin="true">
+                     <img alt="Icon Fermer Carte" class="ct-close" src="icon_fermer.png" data-pin-nopin="true" >
+                     <span class="ct-city__name" >épidaure</span>
+                  </button>
+                  <div class="ct-popup" >
+                     <div class="inner" >
+                     <span class="ct-popup__name" >épidaure</span>
+                     <p class="ct-popup__content" >
+                        Le théâtre Epidaure a été construit au IVe siècle avant J.C. ou au début du IIIe siècle avant J.C. afin d'accueillir Asclépiéia (ou jeux Asclépios) pour participer au concours pour vénérer le dieu médecin Asclépios. On s’en est servi de modèle pour plusieurs autres théâtres grecs.
+                     </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="ct-city olympie" >
+                  <button class="ct-city__button" type="button" tabindex="0" >
+                     <img alt="Icon Ouvrir Carte" class="ct-plus" src="icon_monument.png"  data-pin-nopin="true">
+                     <img alt="Icon Fermer Carte" class="ct-close" src="icon_fermer.png" data-pin-nopin="true" >
+                     <span class="ct-city__name" >olympie</span>
+                  </button>
+                  <div class="ct-popup" >
+                     <div class="inner" >
+                     <span class="ct-popup__name" >olympie</span>
+                     <p class="ct-popup__content" >
+                        La statue de Zeus à Olympie, été situé dans le temple de Zeus, elle était destiné aux roi des dieux, dieu de la foudre: Zeus. maintenant détruit, elle fait partie des 7 merveilles du monde antique.
+                     </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="texte_carte_greece">
+            <div id="title_carte_greece">
+               <h2>carte de la grece antique</h2>
+            </div>
+            <div id="subtitle_carte_greece">
+               <h4>L'étendu de l'Empire Grecque</h4>
+            </div>
+            <div id="divider_carte_greece"></div>
+            <div id="content_carte_greece">
+               <p>
+                  Vous voyez ici sur votre gauche, une carte de la Grèce antique. Vous y trouverez dessus des petits icons de monument. 
+                  Ces icons sont cliquables et vous donneront un petit résumé du monument choisi. Vous pouvez ensuite descendre la page 
+                  afin d'avoir des explications plus approfondits à leur sujet.
+                  Bonne visite !
+               </p>
+            </div>
+           
+         </div>
+      </div>
+
+      <div id="explications_monuments">
+         <div class ="explications_monuments_inner">
+            <div id="titre_zeus" class="titre">
+               parthénon
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div id="texte">
+                     Le Parthénon (littéralement « la « salle » des vierges », ou « la « demeure » des vierges ») est un temple grec situé sur l'Acropole, dédié au culte de la déesse Athéna que les habitants d'Athènes considéraient comme leur patronne et leur protectrice. Le Parthénon, entièrement constitué de marbre pentélique (extrait de la montagne éponyme), est à la fois un temple et un trésor. Le Naos du Parthénon a été conçu pour accueillir la statue de la déesse Athéna Parthénos, œuvre monumentale de Phidias, à laquelle les Athéniens apportaient des offrandes. Si le culte de la déesse était généralement pratiqué dans l'ancien temple d'Athéna dans l'Acropole, le Parthénon était dédié à la déesse Athéna Parthénos de l'Acropole, la protectrice de la cité, et déesse de la guerre et de la sagesse. Mais, plus précisément, le Parthénon protégeait également le trésor de la ville. Ce gisement, principalement composé de métaux précieux, était conservé dans la salle du temple. Si nécessaire, les 1150 kilogrammes d'or de la statue d'Athéna pouvaient être fondus.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_parthenon" src="rpz_parthenon.png" alt="représentation du parthénon">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Le Parthénon est le symbole architectural suprême d'Athènes à l'époque classique, et est probablement le temple le plus inspirant pour les architectes néoclassiques. Il est devenu un modèle dans de nombreux pays occidentaux. Ainsi, au cours du XIXe siècle, de nombreux pays occidentaux s'en sont inspirés et ont organisé leurs propres institutions politiques (parlement, parlement ou tribunal), et ont également accueilli leurs institutions culturelles (bibliothèques, universités ou musées) ou des institutions financières (siège des banques ou des bourses). Le Parthénon est également l’un des monuments les plus représentés (et représentatifs) de la Grèce antique. En effet, il est le symbole d’Athènes (ville très réputée et historiquement représentée), et c’est un monument qui a su traverser les âges de par les inspirations qu’il aura pu laisser aux architectes.
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_parthenon" src="ev_parthenon.png" alt="représentation du Parthénon pendant la Grèce antique">
+                  <br> <p class="desc">représentation du Parthénon pendant la Grèce antique</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_monuments_inner">
+            <div id="titre_poseidon" class="titre">
+               temple d'héra
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Le temple d'Héra à Olympie, également connu sous le nom de temple d'Héraion, était un temple de la Grèce antique et a été construit vers 590 av. Situé dans la région nord, ce petit temple est le lieu le plus sacré d'Altis («bois sacré»), adjacent au Metrôon (Temple de Cybèle), tandis que le temple de Zeus est situé au sud.
+Le temple d'Héra à Olympie était à l'origine utilisé pour vénérer Zeus, construit vers 590 av. J.C. a été lancé à l'initiative des habitants de la ville voisine et allié de Pise : Scillonte. Il a probablement remplacé le temple de Zeus qui avait été érigé plusieurs décennies plus tôt, bien que cette hypothèse ait été remise en question par certains archéologues, et cela peut avoir été le résultat de l'accumulation de butin par les Eléens dans la guerre opposant ces derniers à Pise et la région de Triphylie
+Il a été détruit par un tremblement de terre au début du IVème siècle.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_temphera" src="rpz_temphera.png" alt="représentation du temple d'héra">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Avec le temps, l'hypothèse selon laquelle les piliers en bois d'origine ont été remplacés par des éléments en calcaire est toujours un sujet de débat dans la communauté scientifique. Wilhelm Dörpfeld estime que depuis l'anastylose réalisée dans les années 1900, l'aspect architectural inhabituellement différent de la colonne est facile à observer, à l'appui de l'argument selon lequel la structure en bois est progressivement remplacée. Cependant, les recherches menées dans les années 2010 nous invitent à replacer ce manque d'harmonie dans le contexte de l'architecture dorique qui en était encore à ses balbutiements et non capturée par les idéaux symétriques caractéristiques de l'architecture classique.
+L'autel d’Héra devant le temple est encore utilisé de nos jours pour l'allumage de la flamme olympique.
+                  </div>
+               </div>
+               <div>
+                  <img id="ev_temphera" src="ev_temphera.png" alt="">
+                  <br> <p class="desc">Poseidon tenant son trident</p>
+               </div>
+            </div>
+         </div>
+
+         <div class ="explications_monuments_inner">
+            <div id="titre_hades" class="titre">
+               grand théâtre d'épidaure
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     Le théâtre Epidaure a été construit au IVe siècle avant J.C. ou au début du IIIe siècle avant J.C. afin d'accueillir Asclépiéia (ou jeux Asclépios) pour participer au concours pour vénérer le dieu médecin Asclépios. On s’en est servi de modèle pour plusieurs autres théâtres grecs.
+Le koilon (qui signifie «creux»), également appelé cavea en latin, constitue tous les sièges du public, et s'est ensuite développé en une demi-période composée de 55 rangées de marches, divisées en deux étages par un couloir appelé diazôma. Il se composait à l'origine de 34 gradins, pouvant accueillir 6 200 spectateurs, répartis en 12 espaces (kerkides) séparés par 13 escaliers. Le niveau supérieur a été ajouté au IIe siècle avant J.C. Il y a 21 marches et 22 kerkidès. La capacité du théâtre est ainsi passée à 12 000 spectateurs. On a constaté que le rapport entre le nombre de ces étapes des deux niveaux constitue le nombre d'or (34/21 = 55/34 = 1,61 ..). Le sommet du gradin a un rayon de 58 m et se trouve à 22,50 m au-dessus de l'orchestre (en grec ancien: «l'endroit où le chœur danse»).
+La première rangée (proédria) et les sièges en pierre avec dossiers tapissent tout l'orchestre. Pendant le processus de construction, un orchestre humanoïde circulaire d'un diamètre de 20,28 m est entouré de dalles de marbre et accueille le chœur d'acteurs, danseurs et musiciens. Plus tard, la scène quadrilatérale a été ajoutée, dont la fondation est encore visible, et la scène (prédécesseur) (avec 14 colonnes). L'immense porte d'entrée (parodoi) a été reconstruite. Le système sonore du théâtre Epidaure est bien connu. Le plus petit son produit au bas de l'étagère est transmis à la rangée supérieure. Traditionnellement, les visiteurs en font l'expérience en chuchotant, en jetant des pièces de monnaie ou en brisant des allumettes au centre de l'orchestre, où se trouve une dalle circulaire appelée Autel de Dionysos. 
+
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_epidaure" src="rpz_epidaure.png" alt="représentation du théâtre d'épidaure">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     Le théâtre d'Épidaure est le mieux conservé et passe pour le plus accompli de tous les théâtres grecs antiques. Il a également inspiré l’architecture moderne, puisqu’il est la principale inspiration des amphithéâtres contemporains. C’est de sa complexité architecturale et de l’ingéniosité de son créateur qu’est né ce merveilleux édifice qui, encore aujourd’hui, a été conservé en grande partie (et avec les matériaux d’origine).
+
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+
+         <div class ="explications_monuments_inner">
+            <div id="titre_athena" class="titre">
+               statue de zeus
+            </div>
+            <div class="histoire">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     histoire :
+                  </div>
+                  <div class="texte">
+                     La statue de chryséléphantine de Zeus est l'œuvre du sculpteur athénien Phidias, et a été réalisée vers 436 avant J.C. à Olympie. Il était considéré comme la troisième plus grande des sept merveilles du monde dans les temps anciens. Le terme « chryséléphantine » vient du mot grec chrysós, qui signifie « or », tandis que elephántinos signifie « ivoire » et désigne donc une statue faite de ces deux matériaux. Sur la statue, Zeus était couronné d'un rameau d'olivier. Dans sa main droite, il tenait une petite statue de Niké, représentation personnifiée de la victoire, qui elle-même était couronnée d'un bandeau et d'une couronne. Les proportions sont toujours inconnues. Zeus tenait un sceptre joliment décoré dans sa main gauche avec un aigle perché dessus (probablement l’aigle du Caucase, créature mythique attribuée au dieu du ciel). Zeus portait des sandales et un manteau brodé de figures d'animaux et de fleurs. Son trône était orné de sculptures, d'incrustations (pierres précieuses, ébène), et de décorations peintes.
+                  </div>
+               </div>
+               <div>
+                  <img id="rpz_statuezeus" src="rpz_statuezeus.png" alt="représentation de la statue de zeus">
+               </div>
+            </div>
+
+            <div class="evolution">
+               <div class="explications_dieux_texte">
+                  <div class="sous-titre">
+                     évolution :
+                  </div>
+                  <div class="texte">
+                     De nos jours, la statue à été adapté dans les domaines cinématographique, vidéoludique, ainsi que les jeux de société tel que Seven Wonders. Le jeu Assassin's Creed Odyssey (sorti en octobre 2018),  représente la statue de Zeus dans toute sa splendeur. La modélisation de la statue semble être, en grande partie, basée sur celle conservée au Musée de l'Ermitage de Saint-Pétersbourg.
+                  </div>
+               </div>
+            
+            </div>
+         </div>
+
+      </div>
+   </body>
+
+   <footer>
+      <div id="contenu_footer">
+         <img id="logo_footer" src="../logo.png" alt="logo">
+         <a href="../contact/contact.html#sources">sources</a>
+         <img id="logo_iut" src="../logo_iut.png" alt="logo iut">
+         <img id="logo_univ" src="../logo_univ.png" alt="logo université">
+      </div>
+   </footer>

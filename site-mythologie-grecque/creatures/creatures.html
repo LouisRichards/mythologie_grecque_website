@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="../style.css">
+
+      <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+
+      <title>La Mythologie Grecque</title>
+   </head>
+   <header>
+      <div class="header">
+         <div style="flex-grow: 3">
+            <a href="../index.html"><img id="header_logo" src="../logo.png" alt="Logo"></a>
+         </div>
+         <div id="header_nav">
+            <ul id="header_nav_links">
+               <li class="header_nav_link">
+                  <a href="../dieux/dieux.html">
+                     <h1>dieux</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../titans/titans.html">
+                     <h1>titans</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../heros/heros.html">
+                     <h1>héros</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../creatures/creatures.html" class="active">
+                     <h1>créatures</h1>
+                  </a>
+               </li>
+               <li class="header_nav_link">
+                  <a href="../monuments/monuments.html">
+                     <h1>monuments</h1>
+                  </a>
+               </li>
+               <a href="../contact/contact.html"><img id="header_contact" src="../phone.png" alt="Phone contact"></a>
+            </ul>
+         </div>
+      </div>
+   </header>
+  </head>
+
+  <body style="margin: 0;">
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         <div class="cartes">
+            <div class="carte_inner_crea">
+               <div class="carte_avant_crea">
+                  <img id="img_carte_cerbere" src="icon_cerbere.png" alt="carte cerbère">
+               </div>
+               <div class="carte_arriere_crea">
+                  <h1>cerbère</h1>
+                  <p>Le Cerbère est un chien monstrueux, gardien des enfers et le fils de Typhon et d’Echidna. C’est un chien à plusieurs têtes, 
+                     on lui donnait en général trois têtes. 
+                     Il empêche les morts de s'échapper de l'antre d'Hadès et les vivants de venir récupérer certains morts.</p>
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="cartes">
+            <div class="carte_inner_crea">
+               <div class="carte_avant_crea">
+                  <img id="img_carte_minotaure" src="icon_minotaure.png" alt="carte minotaure">
+               </div>
+               <div class="carte_arriere_crea">
+                  <h1>minotaure</h1>
+                  <p>Le Minotaure, s’appelait Astérios, c’était un homme à tête de taureau que Pasiphaé, épouse de Minos, roi de Crète, 
+                     avait engendré avec le taureau blanc de Crète. 
+                     Le Minotaure est un monstre fabuleux au corps d'un homme et à tête d'un taureau ou mi-homme et mi-taureau.</p>
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="cartes">
+            <div class="carte_inner_crea">
+               <div class="carte_avant_crea">
+                  <img id="img_carte_sphinx" src="icon_sphinx.png" alt="carte sphinx">
+               </div>
+               <div class="carte_arriere_crea">
+                  <h1>sphinx</h1>
+                  <p>Le Sphinx était  généralement un monstre femelle  selon Hésiode le Sphinx avait pour géniteurs Chimère et Orthros. 
+                     Le Sphinx avait un visage et la poitrine d’une femme, les pattes et la queue d’un lion, et le sailes d’un oiseau.</p>
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="cartes">
+            <div class="carte_inner_crea">
+               <div class="carte_avant_crea">
+                  <img id="img_carte_meduse" src="icon_meduse.png" alt="carte méduse">
+               </div>
+               <div class="carte_arriere_crea">
+                  <h1>méduse</h1>
+                  <p>Meduse est une gorgone, fille de Phorcys et Céto, 
+                     elle a la particularité d'avoir une chevelure de serpent et que ses yeux ont le pouvoir de pétrifier tout mortel qui croise son regard.</p>
+               </div>
+            </div>
+         </div>
+        </div>
+        <div class="swiper-slide">
+         <div class="cartes">
+            <div class="carte_inner_crea">
+               <div class="carte_avant_crea">
+                  <img id="img_carte_cyclope" src="icon_cyclope.png" alt="carte cyclope">
+               </div>
+               <div class="carte_arriere_crea">
+                  <h1>cyclope</h1>
+                  <p>Fils de Poséidon et de la nymphe Thoosa, Polyphème signifie "qui parle beaucoup" , 
+                     le Cyclope, était un monstre gigantesque, qui n’avait qu’un œil au milieu du front et se nourrissait de chair humaine.</p>
+               </div>
+            </div>
+         </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+   <div id="explications_crea">
+      <div class ="explications_crea_inner">
+         <div id="titre_cerbere" class="titre">
+            cerbère
+         </div>
+         <div class="histoire">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  histoire :
+               </div>
+               <div id="texte">
+                  Le Cerbère est un chien monstrueux, gardien des enfers et le fils de Typhon et d’Echidna. 
+                  C’était un chien à plusieurs têtes, on lui donnait en général trois têtes.il avait des dents noires et tranchantes, 
+                  qui pénétraient jusqu'à la moelle causant une douleur atroce. 
+                  Il était aussi représenté avec une queue de dragon, et des têtes de serpent sur l’échine. 
+                  Il était enchaîné à l’entrée des enfers et terrorisait les morts, 
+                  mais il était encore plus terrible pour les vivants qui essayaient de forcer la porte des enfers. 
+                  Héraclès dut le capturer vivant pour accomplir son 12e travail. Le héros avait au préalable demandé à Hadès, 
+                  gardien des enfers, s’il pouvait ramener Cerbère à la surface, ce que le dieu accepta, 
+                  seulement s’il parvenait à maîtriser la bête sans arme.
+               </div>
+            </div>
+            <div>
+               <img id="rpz_cerbere" src="rpz_cerbere.png" alt="représentation du cerbère">
+            </div>
+         </div>
+
+         <div class="evolution">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  évolution :
+               </div>
+               <div class="texte">
+                  La représentation du Cerbère a été différente selon les récits: Hésiode lui donnait cinquante têtes et Horace cent, 
+                  mais ce sont les 3 têtes qui a étaient conservés dans la culture. 
+                  Il a aussi inspiré des personnages dans la culture moderne comme le chien Touffu dans 
+                  le film “Harry Potter à l’école des sorciers”. Il a également été repris dans d’autres œuvres littéraires, 
+                  ou cinématographiques (par exemple : “Hercule” de Walt Disney Pictures). 
+               </div>
+            </div>
+            <div>
+               <img id="ev_cerbere" src="ev_cerbere.png" alt="chien touffu dans Harry Potter">
+               <br> <p class="desc">chien touffu dans Harry Potter</p>
+            </div>
+         </div>
+      </div>
+
+      <div class ="explications_crea_inner">
+         <div id="titre_minotaure" class="titre">
+            minotaure
+         </div>
+         <div class="histoire">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  histoire :
+               </div>
+               <div class="texte">
+                  Le Minotaure, s’appelait Astérios, c’était un homme à tête de taureau que Pasiphaé, épouse de Minos, 
+                  roi de Crète, avait engendré du taureau blanc de Crète. Pour cacher son monstrueux enfant, 
+                  Minos demanda à Dédale de construire un palais dont l’agencement des pièces et des couloirs serait si 
+                  compliqué qu’il serait impossible d’en sortir. C’est ainsi que le Labyrinthe fut construit et 
+                  que le Minotaure fut enfermé dedans. Après l'assassinat de son fils Androgée, Minos, 
+                  qui avait remporté la victoire sur les Athéniens demanda un tribut de guerre qui consistait à livrer toutes les neufs ans 
+                  (ou un an selon les auteurs) 7 jeunes hommes et 7 jeunes femmes, destinés à servir de nourriture au monstre ou à mourir 
+                  de faim et de soif dans le dédale des couloirs.Thésée débarqua en Crète dans le but d’arreter le tribut de guerre. 
+                  Il était équipé du fil d’or indestructible qu' Ariane lui avait donné. Il entra dans le labyrinthe et tua 
+                  le minotaure dans son sommeil. Après avoir tué le Minotaure, il n’eut qu’à suivre le fil jusqu’à la sortie.
+               </div>
+            </div>
+            <div>
+               <img id="rpz_minotaure" src="rpz_minotaure.png" alt="représentation du minotaure">
+            </div>
+         </div>
+
+         <div class="evolution">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  évolution :
+               </div>
+               <div class="texte">
+                  Le Minotaure n’a pas eu beaucoup d'interprétations différentes dans le temps, 
+                  mais son récit a inspiré beaucoup d'œuvres de notre temps. 
+                  Il a par exemple inspiré le récit du petit Poucet, 
+                  avec les miettes de pain qui font référence au fil d’Ariane qui a permis à Thésée de retrouver le chemin. 
+                  De plus, Hunger games est inspiré du Minotaure. Chaque district doit envoyer une femme 
+                  et un homme dans une arène pour s’entre-tuer comme le tribut de guerre que les athéniens devaient donner. 
+                  Et le palais dans lequel était enfermé le Minotaure a aussi inspiré beaucoup d'œuvres comme le film (et le jeu) “Labyrinthe”. 
+                  Même de très grands films comme “The Shining” qui est, selon certains, une allégorie du labyrinthe de Dédale, 
+                  qui a lui-même donné son nom à une expression (on dit d’un endroit dans lequel il semble impossible de se repérer, 
+                  ou d’en sortir, que c’est un “dédale”).
+               </div>
+            </div>
+            <div>
+               <img id="ev_minotaure" src="ev_minotaure.png" alt="image du film le labyrinthe">
+               <br> <p class="desc">image du film le labyrinthe</p>
+            </div>
+         </div>
+      </div>
+
+      <div class ="explications_crea_inner">
+         <div id="titre_sphinx" class="titre">
+            sphinx
+         </div>
+         <div class="histoire">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  histoire :
+               </div>
+               <div class="texte">
+                  Le Sphinx était souvent représenté comme un monstre femelle. 
+                  Selon Hésiode le Sphinx avait pour géniteurs Chimère et Orthros. 
+                  Le Sphinx avait un visage et la poitrine d’une femme, les pattes et la queue d’un lion, 
+                  et les ailes d’un oiseau. Ce monstre est envoyé par Héra pour punir Laïos, roi de Thèbes, 
+                  coupable d’avoir enlevé le jeune Chrysippe. Installé sur un rocher du mont Phicium, 
+                  le monstre posait une énigme aux voyageurs qui passaient à proximité. 
+                  Ceux qui n’arrivaient pas à résoudre son énigme étaient immédiatement tués ou dévorés. 
+                  Le reste du temps, le Sphinx ravageait les champs de Béotie. Lorsque Laïos fut assassiné par son fils, 
+                  Oedipe, et remplacé par son beau-frère, Créon, il proclama qu’il donnerait le royaume et la main de sa soeur Jocaste, 
+                  veuve de Laïos, à quiconque viendrait à bout du sphinx. 
+                  Oedipe décida d’affronter le Sphinx qui lui donna à résoudre l’énigme suivante : 
+                  "Quel être, pourvu d'une seule voix, a d'abord quatre jambes, puis deux jambes, 
+                  et finalement trois jambes'' et Oedipe répondit: “l’Homme”. Ayant perdu, 
+                  le Sphinx se précipita du haut de son rocher et se tua. 
+                  C’est ainsi qu’Oedipe devint le roi de Thèbes et épousa la reine Jocaste en ignorant qu’elle était sa mère.
+               </div>
+            </div>
+            <div>
+               <img id="rpz_sphinx" src="rpz_sphinx.png" alt="représentation du sphinx">
+            </div>
+         </div>
+
+         <div class="evolution">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  évolution :
+               </div>
+               <div class="texte">
+                  Beaucoup de modifications mineures ont été apportées au récit : selon Apollodore, 
+                  et des scholiastes d’Hésiode et d'Euripide, Echidna et Typhon sont ses géniteurs. 
+                  Selon d'autres auteurs, c’est Apollon (ou Hadès, là aussi c’est différent) 
+                  qui a envoyé le Sphinx pour punir les habitants de Thèbes de leur impiété. 
+                  De plus, d'autres auteurs nous disent que le Sphinx est posé sur les remparts de Thèbes et que 
+                  c’est Oedipe qui aurait tué le Sphinx a l’aide de son épée, et non grâce à une énigme. 
+                  Mais Pausanias apporte 2 modifications majeures, plus rationnelles. 
+                  Pour lui, le Sphinx est un pirate qui sévissait dans les parages d'Anthédon, 
+                  et qui fut tué par Oedipe et son armée arrivant de Corinthe. Ou bien selon lui, 
+                  le Sphinx était la fille naturelle de Laïos qui préserverait ainsi l’accès au trône.  
+                  Elle demandait aux prétendus fils de Laïos quel était le contenu de l'oracle qui avait été délivré à Cadmos, 
+                  le fondateur de Thèbes. Cet oracle secret n'était connu que de la famille royale de Thèbes. 
+                  Dans le cas où la réponse était erronée, le pauvre garçon était mis à mort sur le champ. 
+                  Œdipe, quant à lui, aurait trouvé la bonne réponse car elle lui avait été donnée dans un rêve. 
+                  Le sphinx n'est pas beaucoup représenté dans la culture moderne, car quand on pense au Sphinx, 
+                  on pense au sphinx d’égypte. Seule la célèbre énigme que le Sphinx donne à Oedipe est encore présente dans notre culture.
+               </div>
+            </div>
+            <div>
+               <img id="ev_sphinx" src="ev_sphinx.png" alt="le sphinx sur son  rocher du mont Phicium">
+               <br> <p class="desc">le sphinx sur son  rocher du mont Phicium</p>
+            </div>
+         </div>
+      </div>
+
+      <div class ="explications_crea_inner">
+         <div id="titre_meduse" class="titre">
+            méduse
+         </div>
+         <div class="histoire">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  histoire :
+               </div>
+               <div class="texte">
+                  Les Gorgones étaient trois monstres, enfants des divinités marines Phorcys et de Céto et sœurs des Grées. 
+                  On les représentait sous la forme de femmes à la chevelure faites de serpents. Méduse faisait partie de ces 3 Gorgones. 
+                  Elle était  d’une laideur repoussante, de forme ronde, avec un nez camard, une bouche immense, 
+                  munie de dents longues comme des défenses de sanglier. Sa chevelure était constituée de serpents. 
+                  Ses armes étaient ses yeux qui lançaient des éclairs et pétrifiaient ceux qu’ils fixaient directement. 
+                  Selon la légende d’Hésiode, Méduse aurait été une belle jeune fille, un peu trop fière de sa chevelure. 
+                  Poséidon l’aurait poursuivi dans le temple d’Athéna pour la séduire. Pour la punir, Athéna l’aurait changée en serpent. 
+                  Persée trancha la tête de Méduse d’un seul coup de serpe (ou d’épée selon les sources). 
+                  Pégase, le cheval ailé, et le guerrier Chrysaor jaillirent du corps décapité.
+               </div>
+            </div>
+            <div>
+               <img id="rpz_meduse" src="rpz_meduse.png" alt="représentation de la méduse">
+            </div>
+         </div>
+
+         <div class="evolution">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  évolution :
+               </div>
+               <div class="texte">
+                  Dans une autre tradition, Athéna aurait enterré sa tête sous la place du marché d’Athènes pour protéger cette ville et elle aurait créé Héraclès. Cette dernière donna  une mèche de cheveux à Stérope pour protéger la ville de Tégée.
+                  Selon Apollodore, Asclépios découvrit que le sang de la Méduse faisait mourir ou ressusciter selon de quelle veine il provenait.
+                  Méduse, ou en général les Gorgones, étaient souvent représentées, dans la Grèce antique, comme des femmes à chevelure de serpents mais parfois elles sont représentées comme étant de belles femmes. Pour certains elle représentait la protection car elle protège la ville d’Athènes, et Méduse signifie “celle qui protège” en grec.
+                  A l’époque du moyen-âge, le récit de Méduse était souvent sens d'interprétation : des femmes tellement belles que si on les regardait, on pensait qu’elles nous changeraient en pierre. Méduse fut aussi utilisée dans des architecture du Moyen-âge, comme à Constantinople, où la tête de Méduse servait de base à deux colonnes de la Citerne Basilique.
+                  De la Renaissance au XVIIe siècle, la représentation de la gorgone devient extrêmement populaire. Pendant la Renaissance, Méduse était dans beaucoup d'ouvrages, toujours représentée comme un monstre terrifiant. C'est d'ailleurs sa tête terrifiante qui va inspirer des grands artistes, comme Léonard de Vinci, ou comme Andrea Mantegna dans son oeuvre “La vie de Saint Jacques”, où Méduse apparaît sur un bouclier. Le récit originel sera représenté dans la peinture de Benvenuto Cellini, Persée tenant la tête de Méduse.
+                  Au XIXe siècle, le mythe de Méduse inspire les poètes romantiques, qui donnent un nouveaux développement au thème de la femme fatale. A l’école de préraphaélite en Angleterre, ils représentaient Méduse comme une victime de Poséidon, punie par Athéna, inaugurant une longue tradition de justice biaisée. Finie la représentation de la peur, comme le montre Jean Delville dans sa peinture “La Méduse”.
+                  Dans la culture contemporaine, Méduse est souvent représentée comme une tragédie, comme une victime, comme dans la représentation de la renaissance.
+               </div>
+            </div>
+            <div>
+               <img id="ev_meduse" src="ev_meduse.png" alt="peinture le meduse de jean Deiville où l'on voit clairement méduse représenter sur la peinture">
+               <br> <p class="desc">peinture le meduse de jean Deiville où l'on voit clairement méduse représenter sur la peinture</p>
+            </div>
+         </div>
+      </div>
+
+      <div class ="explications_crea_inner">
+         <div id="titre_cyclope" class="titre">
+            cyclope
+         </div>
+         <div class="histoire">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  histoire :
+               </div>
+               <div class="texte">
+                  Fils de Poséidon et de la nymphe Thoosa, Polyphème le Cyclope, était un monstre gigantesque, 
+                  qui n’avait qu’un œil au milieu du front et se nourrissait de chair humaine. 
+                  Il est surtout connu pour sa lutte contre Ulysse. 
+                  Le héros aborda sur ses terres et lui demanda l’hospitalité. Mais Polyphème saisit les compagnons d’Ulysse, 
+                  il dévora deux d’entre eux, puis il enferma tous les autres marins dans une antre, et en bloqua l’entrée par une grosse pierre. 
+                  Mais le cyclope but le vin que lui présentait Ulysse et, sous l’effet de l’ivresse, il s’endormit. 
+                  Aussitôt, Ulysse planta l'œil de Polyphème avec un tronc d’arbre enflammé. Polyphème était aveugle. 
+                  Ulysse et ses compagnons ont réussi à sortir de la caverne. Puis le Cyclope appela ses frères à l’aide contre “Personne” car c’est comme ça qu’Ulysse s’était prudemment nommé. Le croyant fou, les autres Cyclopes l'abandonnèrent et le malheureux fut laissé seul. Mais en quittant l’île, Ulysse révéla sa réelle identité à Polyphème, permettant à ce dernier de demander à son père de punir Ulysse.
+                  Polyphème tomba aussi amoureux de Galatée, l’amante d’Acis qui le trouva trop rustre. 
+                  Le cyclope décida donc de tuer son amant.
+               </div>
+            </div>
+            <div>
+               <img id="rpz_cyclope" src="rpz_cyclope.png" alt="représentation du cyclope">
+            </div>
+         </div>
+
+         <div class="evolution">
+            <div class="explications_dieux_texte">
+               <div class="sous-titre">
+                  évolution :
+               </div>
+               <div class="texte">
+                  Cependant, il existe une légende ou Galatée répond à l'amour du cyclope dont elle eut trois enfants: 
+                  Celtos, Galas et Illyrios.
+                  L’histoire de Polyphème a surtout fait objet de métaphores philosophiques. 
+                  Selon Héraclide, le cyclope représentait la fureur sauvage, propre à chaque homme. 
+                  Il y a aussi quelques peintures comme Acis et Galatée se dérobant au regard de Polyphème. 
+                  Cependant, Polyphème a aussi été adapté dans la littérature, le jeu vidéo, ainsi que le domaine cinématographique 
+                  (par exemple, dans le film “Percy Jackson : La Mer des Monstres”).
+               </div>
+            </div>
+            <div>
+               <img id="ev_cyclope" src="ev_cyclope.png" alt="">
+               <br> <p class="desc">representation de Galatée</p>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+  </body>
+
+  <footer>
+   <div id="contenu_footer">
+      <img id="logo_footer" src="../logo.png" alt="logo">
+      <a href="../contact/contact.html#sources">sources</a>
+      <img id="logo_iut" src="../logo_iut.png" alt="logo iut">
+      <img id="logo_univ" src="../logo_univ.png" alt="logo université">
+   </div>
+</footer>
+
+</html>
